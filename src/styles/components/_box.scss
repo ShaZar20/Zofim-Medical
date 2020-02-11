@@ -1,0 +1,60 @@
+//
+// Desktop mode
+//
+
+.box {
+    background: white;
+    height: 8%;
+    width: 100%;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-box {
+    background: grey;
+    height: 20%;
+    width: 100%;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+}
+
+//
+// Tablet mode
+//
+
+@media (min-width: 481px) and (max-width: 1023px) {
+    .box {
+        height: auto;
+        max-height: 75px;
+        max-width: 75px;
+        margin: 0 $s-size;
+    }
+
+    .user-box {
+        height: auto;
+        max-height: 75px;
+        max-width: 166px;
+        margin: 0;
+        margin-left: $xl-size;
+        
+    }
+}
+
+//
+// Mobile phone mode
+//
+
+@media (max-width:480px) {
+    .box {
+
+    }
+    .user-box {
+        height: auto;
+        max-height: 50px;
+        max-width: 132px;
+        margin: 0;
+    }
+}

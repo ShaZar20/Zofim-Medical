@@ -1,0 +1,85 @@
+//
+// Desktop mode
+//
+
+.container {
+    height:100%;
+    width:100%;
+    overflow: initial;
+    position: fixed;
+    display: flex;
+}
+
+.page-container {
+    background: white;
+    border-radius: 10px;
+    width: 85%;
+    height: initial;
+    margin: 1.2rem 1rem 1.2rem 1.2rem;
+}
+
+.menu-container {
+    height: inherit;
+    width: 15%;
+    margin: 1.2rem 1.2rem 1.2rem 0;
+}
+
+.menuSub-container {
+    height: inherit;
+}
+
+//
+// Tablet mode
+//
+
+@media (min-width: 481px) and (max-width: 1023px)  {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .page-container {
+        height: 87%;
+        width: auto;
+        margin: 1.2rem;
+    }
+
+    .menu-container {
+        height: 13%;
+        width: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0 1.2rem;
+        padding: $l-size 0 0 0;
+    }
+    .menuSub-container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+//
+// Mobile phone mode
+//
+
+@media (max-width:480px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .page-container {
+        height: 93%;
+        width: auto;
+        margin: 1.2rem;
+    }
+    .menu-container {
+        height: 7%;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        margin: 0 1.2rem;
+        padding: 1rem 0 0 0;
+    }
+}
