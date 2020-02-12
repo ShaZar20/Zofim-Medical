@@ -20,19 +20,19 @@ const HomePage = () => (
             </div>
             <div className="menuSub-container">
                 <div className="box">
-                    <NavLink to="/01" className="link" >01</NavLink>
+                    <NavLink to="/01" className="link" activeClassName="is-active" >01</NavLink>
                 </div>
                 <div className="box">
-                    <NavLink to="/02" className="link" >02</NavLink>    
+                    <NavLink to="/02" className="link" activeClassName="is-active" >02</NavLink>    
                 </div>
                 <div className="box">
-                    <NavLink to="/03" className="link" >03</NavLink>    
+                    <NavLink to="/03" className="link" activeClassName="is-active" >03</NavLink>    
                 </div>
                 <div className="box">
-                    <NavLink to="/04" className="link" >04</NavLink>    
+                    <NavLink to="/04" className="link" activeClassName="is-active" >04</NavLink>    
                 </div>
                 <div className="box">
-                    <NavLink to="/05" className="link" >05</NavLink>    
+                    <NavLink to="/05" className="link" activeClassName="is-active" >05</NavLink>    
                 </div>
             </div>
         </div>
